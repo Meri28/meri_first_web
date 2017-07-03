@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+input [type=text], input[text=password] {
+	width:100%
+        padding: 15px 25px;
+        margin: 10px 0;
+	display:inline block;
+	border: 1px solid gray;
+	box-sizing: border-box;
+}
+
+.cancelbtn {
+	background-color: red;
+	color:white;
+	padding: 10px 20px;
+	margin: 10px 0;
+	border:none;
+	cursor:pointer;
+ 	width:50%;
+	
+}
+
+.signupbtn {
+
+	background-color: green;
+        color:white;
+	padding: 10px 20px;
+	margin: 10px 0;
+	border:none;
+	cursor:pointer;
+ 	width:50%;
+}
+
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+</style>
+<body>
+<h2>Signup Form</h2> 
+<form action="/action_page.php" style="border: 2px solid gray">
+<div class="container">
+	
+	<label><b>First Name</b></label> 
+ <br>
+    	<input type="text" placeholder="Enter First Name" name="First Name" required>
+ <br>
+     
+	<label><b>Middle Name</b></label> 
+ <br>
+    <input type="text" placeholder="Enter Middle Name" name="Middle Name">
+ <br> 
+
+	<label><b>Last Name</b></label> 
+ <br>
+    <input type="text" placeholder="Enter Last Name" name="Last Name">
+ <br> 
+
+    <label><b>Email</b></label> 
+ <br>
+    <input type="text" placeholder="Enter Email" name="email" required>
+ <br>
+     <label><b>Password</b></label>
+ <br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+ <br>
+     <label><b>Birthday</b></label>
+ <br>
+    <input type="Day" placeholder="Enter Day" name="day" required>
+    <input type="Month" placeholder="Enter Month" name="month" required> 
+    <input type="Year" placeholder="Enter Year" name="year" required>
+<br>
+   
+<label><b>Choose one of the following</b></label>
+<br>  
+
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="male" value="male">
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="female" value="female">
+  <label for="other">Other</label>
+  <input type="radio" name="gender" id="other" value="other"><br><br>
+ 
+<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+</div>
+</form>
+
+</html>
+</body>
