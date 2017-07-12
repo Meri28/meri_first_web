@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+input [type=text], input[text=password] {
+	width:100%
+        padding: 15px 25px;
+        margin: 10px 0;
+	display:inline block;
+	border: 1px solid gray;
+	box-sizing: border-box;
+}
+
+
+
+
+.container {
+    padding: 16px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+</style>
+<body>
+<h2>Edit personal info</h2> 
+<form action="/action_page.php" style="border: 2px solid gray">
+<div class="container">
+	
+	<label><b>First Name</b></label> 
+ <br>
+    	<input type="text" placeholder="Edit First Name" name="First Name" required>
+ <br>
+     
+	<label><b>Middle Name</b></label> 
+ <br>
+    <input type="text" placeholder="Edit Middle Name" name="Middle Name">
+ <br> 
+
+	<label><b>Last Name</b></label> 
+ <br>
+    <input type="text" placeholder="Edit Last Name" name="Last Name">
+ <br> 
+
+   
+     <label><b>Birthday</b></label>
+ <br>
+    <input type="Day" placeholder="Enter Day" name="day" required>
+    <input type="Month" placeholder="Enter Month" name="month" required> 
+    <input type="Year" placeholder="Enter Year" name="year" required>
+<br>
+
+<label><b>E-mail</b></label> 
+ <br>
+    <input type="text" placeholder="Add another e-mail" name="E-mail">
+ <br> 
+   
+ <label><b>Mobile phone</b></label> 
+ <br>
+    <input type="text" placeholder="Add mobile phone" name="Mobile phone">
+ <br> 
+
+<label><b>Home address</b></label> 
+ <br>
+    <input type="text" placeholder="Enter home address" name="Address">
+ <br>   
+    <div class="clearfix">
+   
+</div>
+</form>
+
+<h2>Family and relationship</h2>
+<form action="/action_page.php" style="border: 1px solid gray">
+<div class="container">
+	
+	<label><b>Relationship</b></label> 
+ <br>  
+
+  <label for="Single">Single</label>
+  <input type="radio" name="status" id="single" value="single">
+  <label for="In a relationship">In a relationship</label>
+  <input type="radio" name="status" id="In a relationship" value="In a relationship">
+  <label for="Engaged">Engaged</label>
+  <input type="radio" name="status" id="Engaged" value="Engaged"><br>
+  <label for="Married">Married</label>
+  <input type="radio" name="status" id="Married" value="Married">
+   <label for="Divorced">Divorced</label>
+  <input type="radio" name="status" id="Divorced" value="Divorced">
+ <label for="Widowed">Widowed</label>
+  <input type="ratio" name="status" id="Widowed" value="Widowed"><br>
+		
+	
+	<label><b>Family members</b></label> 
+ <br>
+    
+  <label for="Family member">Family member</label>
+  <input type="form" name="status" id="person" value="">
+    
+ <br> 
+
+    <div class="clearfix">
+   
+</div>
+</form>
+
+<h2>Work and Education</h2> 
+<form action="/action_page.php" style="border: 1px solid gray>
+<div class="container">
+	
+	<label><b>Work</b></label> 
+ <br>
+    	<input type="text" placeholder="Enter Workplace" name="Edit Workplace" required>
+ <br>
+     
+	<label><b>Professional skills</b></label> 
+ <br>
+    <input type="text" placeholder="Enter Professional skills" name="Professional skills">
+ <br> 
+
+	<label><b>University</b></label> 
+ <br>
+    <input type="text" placeholder="Enter University" name="University">
+ <br> 
+
+	<label><b>High School</b></label> 
+ <br>
+    <input type="text" placeholder="Enter High school" name="High school">
+ <br> 
+
+</div>
+</form>
+
+</html>
+</body>
